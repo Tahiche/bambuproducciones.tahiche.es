@@ -1,0 +1,13 @@
+name = Custom Admin Ember Based
+description = Admin Ember based.
+base theme = ember
+core = 7.x
+stylesheets[all][] = custom_admin_styles.css
+
+project = "custom_admin_ember" 
+
+; Regions
+regions[content] = Content
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom

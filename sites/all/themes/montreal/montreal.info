@@ -1,0 +1,73 @@
+name = Montreal
+description = A Responsive Parallax Drupal 7 Theme
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = /css/text.css
+stylesheets[all][] = /css/imports.css
+stylesheets[all][] = /css/ie.css
+scripts[] = js/jquery.js
+scripts[] = js/jquery-ui-1.8.23.custom.min.js
+
+scripts[] = js/gumby.js
+scripts[] = js/modernizr-2.0.6.min.js
+
+scripts[] = js/mobile-menu.js
+scripts[] = js/jquery.ui.totop.js
+scripts[] = js/easing.js
+scripts[] = js/plugins.js
+scripts[] = js/main.js
+scripts[] = js/montreal.js
+
+regions[content]        = Content
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+
+regions[front_blog]    = Front Page Blog
+
+regions[recent_projects] = Recent Projects
+
+regions[footer_1]       = Footer Box 1
+regions[footer_2]       = Footer Box 2
+regions[footer_3]       = Footer Box 3
+regions[footer_4]       = Footer Box 4
+regions[footer_full]    = Footer Full Width
+
+settings[branding_type] = 'text'
+
+settings[enable_highlight] = '1'
+settings[highlight_text] = '"There's no such thing as simple. Simple is hard"'
+
+settings[enable_slider] = '0'
+settings[slides_number] = '3'
+settings[slider_caption] = '<h1 class="bigtoppadding whitetext"><span class="light">WE CREATE</span><br/>BRANDS PEOPLE LOVE</h1><h5 class="white blacktext smallsidepadding">MONTREAL DESIGN STUDIO</h5><p class="whitetext meta">We've cleaned up the air, but polluted the soul. We write more, but learn less. We plan more, but accomplish less. We've learned to rush, but not to wait. We write more, but learn less. We plan more, but accomplish less.</p>'
+
+settings[enable_services] = '1'
+
+settings[enable_information] = '1'
+
+settings[enable_highlight] = '1'
+settings[highlight_text] = 'Haiku is modern.  A clean layout for your site. Fast and responsive.'
+
+settings[enable_recent_posts] = '0'
+settings[recent_posts_title] = 'Our Recent Notes'
+
+settings[enable_recent_projects] = '0'
+settings[recent_projects_title] = 'Recent Projects'
+
+settings[page_layout] = 'full_width'
+settings[blog_layout] = 'sidebar_right'
+
+settings['font_family'] = '"Oswald", sans-serif'
+
+settings[h1] = '36px'
+settings[h2] = '30px'
+settings[h3] = '24px'
+settings[h4] = '18px'
+settings[h5] = '14px'
+settings[h6] = '12px'
+
+settings[enable_primary_footer] = '1'
+
+settings[enable_secondary_footer] = '1'
+settings[secondary_footer_text] = 'Design by <a href="http://refaktor.co" target="_blank">Refaktor</a>'

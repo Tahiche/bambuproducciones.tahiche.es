@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	/*font-family:"Courier New", Courier, monospace;*/
+	
+	}
+/* group fields ***********/
+
+.field-group-format.collapsed{
+	margin:20px 0;
+	padding:5px;
+	background-color:#97BEDF;
+	color:#FFF;
+	}
+.field-group-fieldset legend{
+	font-size:22px;
+	font-weight:bold;
+	margin-top:15px;
+	}
+fieldset.field-group-fieldset{
+	border:1px #666 solid;
+	background-color:#EAF3F4;
+	margin-top:15px;
+	}
+
+.item-list h3, .block .block-title, .fieldset-title, .collapsible .fieldset-legend a {
+display: block;
+font-size: 15px;
+margin: 0px;
+padding: 4px 9px 5px;
+color: #333;
+background: #f6f6f6;
+}
+
+legend{
+	color:#036;
+	}
+div.vertical-tabs .vertical-tabs-panes legend {
+	display:block !important; 
+}
+
+/********** error messages dont appear ************/
+.messages {
+display: inherit !important;
+}
+
+div.text-format-wrapper fieldset.filter-wrapper.form-wrapper { 
+	display:none;
+}
+
+
+.view-display-id-entityreference_view_widget_1 .contextual-links-wrapper,
+#edit-field-destacados-und-selected-items-table .contextual-links-wrapper
+{
+	display:none !important;
+	}
+	
+.media-item.selected {
+background: #036;
+}

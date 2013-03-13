@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+#admin-menu .dropdown li {
+	width:auto !important;
+	
+	}
+#admin-menu .dropdown li li{
+	width:160px !important;
+	}
+
+#admin-menu .dropdown .admin-menu-search {
+	height:auto !important;
+
+}
+
+#admin-menu, #admin-menu .dropdown{
+	z-index:50001;
+	}
+
+/************** inline edit tab **************/
+ul.tabs.primary #toolbar-tab-edit{
+display: block;
+width: auto;
+padding: 0;
+margin: 0 10px 0 0;
+line-height: 30px;
+float: left;
+border-color: #bbb;
+border-style: solid solid none solid;
+border-width: 1px;
+height: auto;
+margin-right: 0.5em;
+padding: 0 1em;
+text-decoration: none;
+	}
+	
+
+	

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+#admin-menu .dropdown li {
+	width:auto !important;
+	
+	}
+#admin-menu .dropdown li li{
+	width:160px !important;
+	}
+
+#admin-menu .dropdown .admin-menu-search {
+	height:auto !important;
+
+}
+
+#admin-menu, #admin-menu .dropdown{
+	z-index:50001;
+	}
+
+/************** inline edit tab **************/
+ul.tabs.primary #toolbar-tab-edit{
+display: block;
+width: auto;
+padding: 0;
+margin: 0 10px 0 0;
+line-height: 30px;
+float: left;
+border-color: #bbb;
+border-style: solid solid none solid;
+border-width: 1px;
+height: auto;
+margin-right: 0.5em;
+padding: 0 1em;
+text-decoration: none;
+background-color:#CCC;
+	}
+	
+div.krumo-root {
+margin-top: 50px;
+z-index: 8000;
+}
+
+legend{
+	color:#036;
+	}
+div.vertical-tabs .vertical-tabs-panes legend {
+	display:visible !important; 
+}
+
+/*************** edit_tabs **************/
+
+#edit_tabs {
+padding:5px;
+/*display: inline;*/
+width:100px;
+position: fixed;
+top: 80px;
+left: 20px;
+background-color:rgba(0,0,0,0.4);
+color:#666;
+border:1px solid white;
+}
+#edit_tabs .ctools-collapsible-handle{
+	/*display:inline-block;*/
+	color:#ccc;
+	padding-left:5px;
+	}
+#edit_tabs .ctools-toggle{
+	background-color:rgba(255,255,255,0.4);
+	}
+	
+
+ul.field-collection-view-links{
+	display:none;
+	}
+ul.action-links-field-collection-add{
+	display:none;
+	}

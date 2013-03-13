@@ -1,0 +1,11 @@
+<?php
+
+/**
+* Implements hook_menu().
+*/
+function localtasks_links_menu() {
+  $items = array();
+
+// krumo($items);
+  return $items;
+}

@@ -1,0 +1,78 @@
+<?php
+/**
+ * Implements hook_taxonomy_term_insert().
+ */
+function sumarelementomenu_taxonomy_term_insert($term) {
+  if ($term->vid == 1) {
+    $item = array(
+      'link_path' => 'taxonomy/term/' . $term->tid,
+      'link_title' => ucfirst($term->name),
+      'menu_name' => 'main-menu',
+      'weight' => 1,
+    );
+    menu_link_save($item);
+  }
+}
+
+/**
+ * Implements hook_taxonomy_term_delete().
+ */
+function sumarelementomenu_taxonomy_term_delete($term) {
+  if ($term->vid == 1) {
+    menu_link_delete(NULL, 'taxonomy/term/' . $term->tid);
+  }
+}
+
+function sumarelementomenu_node_presave($node){
+
+drupal_set_message("hookuing_node_presave");
+
+if($node->type=="trabajo_ficha" ){
+	if (!$node->menu['plid'] || $node->menu['plid']==0){
+	$item = array(
+	  'link_path' => 'node/' . $node->nid,
+	  'link_title' => $node->title,
+	  // television
+	  'plid' => 749,
+	  'hidden' => 0
+	);
+	menu_link_save($item);
+	drupal_set_message("añadido al menu");
+	}
+}
+
+}
+
+/*function sumarelementomenu_node_update($node) {
+  
+global $user;
+
+
+drupal_set_message("sumarelementomenu_node_update");
+
+drupal_set_message(krumo($node));
+  return false;
+  exit;
+} 
+
+function sumarelementomenu_entity_update($node) {
+  
+  global $user;
+krumo($node);
+
+drupal_set_message("sumarelementomenu_entity_update");
+  return false;
+  exit;
+} 
+*/
+
+function sumarelementomenu_node_save($node){
+	krumo($node);
+}
+
+function sumarelementomenu_preprocess_page(&$vars, $hook) {
+	//krumo($vars);
+	/*dpm($vars['node']);
+	drupal_set_message("sumarelementomenu_preprocess_page");*/
+}
+?>

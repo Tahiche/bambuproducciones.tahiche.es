@@ -1,0 +1,8 @@
+name = Sumar Nodo a Menu sumarelementomenu
+description = Añadir nodo a menu on node save.
+package = Custom
+core = 7.x
+
+
+
+
