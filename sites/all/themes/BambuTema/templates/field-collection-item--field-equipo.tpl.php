@@ -27,6 +27,7 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
+ // krumo($content);
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 

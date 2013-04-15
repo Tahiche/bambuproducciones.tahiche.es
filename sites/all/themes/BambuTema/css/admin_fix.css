@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+/********for CK editor preview */
+body .cke_editable, .cke_editable{
+	background:#FFF !important;
+	padding:10px !important;   
+	}
+	
+	
 #admin-menu .dropdown li {
 	width:auto !important;
 	

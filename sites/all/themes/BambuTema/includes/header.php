@@ -14,7 +14,7 @@
             
 		          <?php 
 				  //print theme('links__system_main_menu'
-				 /* print theme('links__system_menu_menu_principal', array(
+				  print theme('links__system_menu_menu_principal', array(
 		            'attributes' => array(
 		              'id' => 'main-menu-links',
 		              'class' => array('links', 'clearfix'),
@@ -23,16 +23,16 @@
 		              'text' => t('Main menu'),
 		              'level' => 'h2',
 		              'class' => array('element-invisible'),
-		            ),
-		          )); */
+		            ), 
+		          )); 
 				  
-				  print theme('links', array(
+				/*  print theme('links', array(
 				  'links' => menu_navigation_links('menu-menu-principal'),
 				  'attributes' => array(
 		              'id' => 'main-menu-links',
 		              'class' => array('links', 'clearfix'),
 		            ),
-				  ));
+				  ));*/
 		          ?>
             
             </nav>

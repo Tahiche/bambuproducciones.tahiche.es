@@ -30,7 +30,7 @@
 ?>
 <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <div class="row smallpadding smallsidepadding white blacktext"<?php print $content_attributes; ?>>
+  <div class="row smallpadding smallsidepadding black whitetext"<?php print $content_attributes; ?>>
   <div class="four columns">
     <?php
 	$content['field_foto_imagen'][0]['#image_style']='teaser_list_img';

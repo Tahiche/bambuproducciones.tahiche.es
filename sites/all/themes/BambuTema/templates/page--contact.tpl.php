@@ -5,13 +5,13 @@ print ($edit_tabs);
 ?>
 
 
-<!-- CONTACT CONTAINER -->
-<div class="container" style="background:url(<?php echo $root; ?>/img/bambufondo.jpg) repeat-x white;">
-	<section class="row white sidesblack ">
+<!-- CONTACT CONTAINER // sidesblack -->
+<div class="container white">
+	<section class="row white  "> 
 	<div id="map">
 </div>
 </section>
-<section class="row white sidesblack">
+<section class="row white ">
 	<!-- FORM COLUMN -->
 	<div class="seven columns leftpadding bigpadding" data-role="form">
 		<h3 class="extrabold blacktext midbottommargin seriftitle"><?php echo t('Contacte con nosotros');?></h3>

@@ -53,8 +53,10 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 
 <?php if (theme_get_setting('enable_highlight') == '1') : ?>
 <!-- THICK STRIPE BORDER -->
-<div class="smallpadding" style="background: url('<?php echo $root; ?>/img/Carta_de_ajuste.jpg');" >
+<!-- THICK STRIPE BORDER -->
+<div class="smallpadding white"  >
 </div>
+
 <!-- QUOTE CONTAINER WITH STRIPE BACKGROUND AND SLIDESHOW IN THE BACK -->
 <div class="container largepadding_back">
 	<section class="row bigpadding">

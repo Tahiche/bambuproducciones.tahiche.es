@@ -1,0 +1,20 @@
+--- field_collection.module
++++ field_collection.module
+@@ -885,7 +885,7 @@
+  * may be used to seamlessly create field collection items during host-entity
+  * creation or to save changes to the host entity and its collections at once.
+  */
+-function field_collection_field_presave($host_entity_type, $host_entity, $field, $instance, $langcode, &$items) {
++function field_collection_field_presave($host_entity_type, $host_entity, $field, $instance, $langcode = LANGUAGE_NONE, &$items) {
+   foreach ($items as &$item) {
+     // In case the entity has been changed / created, save it and set the id.
+     // If the host entity creates a new revision, save new item-revisions as
+@@ -1586,7 +1586,7 @@
+   elseif (isset($item['value'])) {
+     // By default always load the default revision, so caches get used.
+     $entity = field_collection_item_load($item['value']);
+-    if ($entity->revision_id != $item['revision_id']) {
++    if ($entity && $entity->revision_id != $item['revision_id']) {
+       // A non-default revision is a referenced, so load this one.
+       $entity = field_collection_item_revision_load($item['revision_id']);
+     }

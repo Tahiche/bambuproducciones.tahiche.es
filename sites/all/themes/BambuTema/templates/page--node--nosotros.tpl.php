@@ -7,7 +7,8 @@ print ($edit_tabs);
 <!-- STRIPES BACKGROUND -->
 
  
-  <div class="container white"  style="background:url(<?php echo $root; ?>/img/bambufondo.jpg) repeat-x white;">      
+  <div class="container white">
+        
     <div class="row white">
     <div class="bigpadding"></div>
     
@@ -32,7 +33,7 @@ print ($edit_tabs);
         </div>
         
 <!-- THICK STRIPE BORDER -->
-<div class="smallpadding" style="background: url('<?php echo $root; ?>/img/Carta_de_ajuste.jpg') 240px 0px;" >
+<div class="smallpadding black"  >
 </div>
 
 
