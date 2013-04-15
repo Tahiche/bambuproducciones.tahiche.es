@@ -2,10 +2,10 @@
   global $root, $base_url; 
   $tags = render($content['field_portfolio_basic_tags']);
   $tags = str_replace(',', '/',$tags);
-  //krumo($node);
+ // krumo($content);
 ?>
 
-<div class="gridblock">
+<div class="newsgridblock">
   <?php 
    
    //print 
@@ -17,18 +17,22 @@
   
     else if(isset($content['field_portfolio_stripe_banner']) ){ 
 	//$content['field_portfolio_stripe_banner'][0]['#image_style']="teaser_list_img";
-	print render($content['field_portfolio_stripe_banner']);
+	print render($content['field_portfolio_stripe_banner']); 
 	}
    else{
 	   print render($content['field_image']);
 	   }
   // print render($content['field_portfolio_stripe_banner']);
+  //<a href="<?php print $node_url;">
   ?>
-  <a href="<?php print $node_url;?>">
-  <div class="gridinfo">
-		<h3 class="whitetext extrabold smalltoppadding center"><?php print $title; ?></h3>
-		<h5 class="whitetext center"><?php echo $tags; // echo render($content['body']); ?></h5>
-		<span class="smallfont space"><?php echo t('VER PROYECTO');?></span>
+  
+  <div class="newsgridinfo">
+		<h5 class="blacktext smalltoppadding center"><?php echo render($content['title_field']) ?></h5>
+		<div  class="newsteaserbody greytext center smallfont"><?php 
+		$teaserT= strip_tags($content['body'][0]['#markup'], '<b> <a> <strong> <br>')."...";
+		
+		echo render( $teaserT ); ?></div>
+		
 	</div>
-	</a>
+	
 </div>

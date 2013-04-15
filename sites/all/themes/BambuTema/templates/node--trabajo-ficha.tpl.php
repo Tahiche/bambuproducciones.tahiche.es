@@ -52,8 +52,10 @@
 	      hide($content['field_portfolio_stripe_slide_2']);  //legacy support only 
 	      hide($content['field_portfolio_stripe_slide_3']);  //legacy support only 
 		  print "<h5 id='sidebar_title'>".$title."</h5>";
+		  
 	      print render($content);
-		   
+		  
+		 		   
 	    ?>
 	  </div>
 	  

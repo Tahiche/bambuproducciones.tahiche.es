@@ -19,7 +19,7 @@
 	}
 
 /************** inline edit tab **************/
-ul.tabs.primary #toolbar-tab-edit{
+#edit_tabs #toolbar-tab-edit, #edit_tabs  li{
 display: block;
 width: auto;
 padding: 0;
@@ -35,6 +35,10 @@ padding: 0 1em;
 text-decoration: none;
 background-color:#CCC;
 	}
+#edit_tabs  li{
+list-style: none;
+}
+
 	
 div.krumo-root {
 margin-top: 50px;

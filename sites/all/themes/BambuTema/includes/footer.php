@@ -4,7 +4,12 @@ function BambuTema_footer($page){
 ?>
 <!-- begin footer -->   
   <!-- FOOTER -->
-<footer class="black">
+
+
+
+<footer class="grey topblack">
+
+
 <div class="container">
 
   <?php if (theme_get_setting('enable_primary_footer') == '1') { ?>
@@ -12,7 +17,7 @@ function BambuTema_footer($page){
 	
 		<div class="four columns">
       <div id="footer_address" class="meta">
-      <h5 class="whitetext">Bambú Producciones</h5></br>
+      <h5 class="blacktext">Bambú Producciones</h5></br>
       Avenida de Europa 34B 2ºIzq</br> 
 28023 Pozuelo de Alarcón - Madrid</br>
 
@@ -21,14 +26,14 @@ function BambuTema_footer($page){
 
     <div class="four columns">
       <div id="footer_address" class="meta">
-      <h5 class="whitetext">Contacto:</h5></br>
+      <h5 class="blacktext">Contacto:</h5></br>
       <a href="mailto:info@bambuproducciones.com">info@bambuproducciones.com</a></br>
 Tel: 91 799 25 41 
 </div>
     </div>
     
     <div class="four columns">
-      <h5 class="whitetext">Enlaces:</h5></br>
+      <h5 class="blacktext">Enlaces:</h5></br>
       <div id="social_icons">
       <a href="#"><img src="<?php echo $root;?>/img/facebookIcon.png" /></a>
       <a style="margin-left:10px" href="#"><img src="<?php echo $root;?>/img/tweetericon.png" /></a>

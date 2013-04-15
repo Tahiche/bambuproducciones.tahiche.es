@@ -3,7 +3,7 @@
   global $root; 
 ?>
 
-  <header data-0="top:40px;" data-top-top="top:0px;" class="boxshadow">
+  <header data-0="top:40px;" data-top-top="top:0px;" class="boxshadow white">
     <div class="container">     
       <section class="row">  
         
@@ -44,7 +44,7 @@
 		 	
 		 
             <a id="logoheader" href="<?php print base_path();?>"><img id="logo_b" src="/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/img/logobambu.gif" />
-            <img id="osoimg" data-0="height:82px" data-top-top="height:0px" src="/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/img/oso.png" />
+           <!--  <img id="osoimg" data-0="height:82px" data-top-top="height:0px" src="/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/img/oso.png" /> -->
             </a>
             
             <div id="language_select"><?php  

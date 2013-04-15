@@ -4,7 +4,7 @@
 print ($edit_tabs);
 ?>
 
-<div class="container" style="background:url(<?php echo $root; ?>/img/Carta_de_ajuste.jpg);">            
+<div class="container white" >            
   <section class="row ">
     
     <div class="ten columns blogpost white  largepadding  push_one">

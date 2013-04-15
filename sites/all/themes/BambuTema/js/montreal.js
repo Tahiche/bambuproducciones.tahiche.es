@@ -31,6 +31,7 @@
     
     $('.dropdown ul').removeClass('menu');
     
-    $('#navigationmain').mobileMenu();
+    $('#navigationmain').mobileMenu({
+			defaultText: 'Ir a...'});
     	  
 	});

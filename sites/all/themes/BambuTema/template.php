@@ -42,7 +42,7 @@ function BambuTema_preprocess_page(&$vars, $hook) {
 	  'ctools_collapsible',
 	  array(
 		'handle' => t('Editar'), 
-		'content' => render($vars['tabs']), 
+		'content' => render($vars['tabs']['#primary']), 
 		'collapsed' => TRUE
 	  )
 	);
@@ -52,6 +52,7 @@ function BambuTema_preprocess_page(&$vars, $hook) {
   
    if (isset($vars['node'])) {
    if($vars['node']->type=="trabajo_ficha"){
+	   //krumo($vars['node']);
 	   $vars['detalles_ficha']=render(field_view_field('node',$vars['node'], 'field_detalles_ficha','default'));
 	   $vars['logotipo']=render(field_view_field('node', $vars['node'], 'field_logotipo','default'));
 	   $vars['texto_promo']=render(field_view_field('node', $vars['node'], 'field_texto_promo','default'));
@@ -62,7 +63,7 @@ function BambuTema_preprocess_page(&$vars, $hook) {
 		} 
    } // fin isset($vars['node'
    
-  // krumo($vars['tabs']['#primary']); 
+  // krumo($vars['tabs']); 
 }
 
 function BambuTema_preprocess_node(&$vars, $hook) {
@@ -406,6 +407,12 @@ function BambuTema_user_css() {
   echo theme_get_setting('user_css');
   echo "</style>";
   echo "<!-- End user defined CSS -->";	
+}
+
+function text_cutAfter($string, $len = 30, $append = '...') {
+        return (strlen($string) > $len) ? 
+          substr($string, 0, $len - strlen($append)) . $append : 
+          $string;
 }
 
 ?>

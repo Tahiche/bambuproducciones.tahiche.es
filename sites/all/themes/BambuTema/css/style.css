@@ -69,7 +69,6 @@ z-index: 50000;
 border-top: 2px solid #000;
 border-bottom: 2px solid #000;
 display: block;
-background-color: #fff;
 position: fixed;
 width: 100%;
 height: 40px;
@@ -110,6 +109,10 @@ vertical-align:top;
 .branding {
 margin-top: -5px;	
 }
+
+a img{
+	border:0;
+	}
 
 /************** field collection **************/
 .field-collection-view {
@@ -163,12 +166,12 @@ margin-top:-5px;
 
 ::selection
 {
-background:#43EDAB;
+background:#eeeeee;
 color:#111;
 }
 ::-moz-selection
 {
-background:#43EDAB;
+background:#eeeeee;
 color:#111;
 }
 
@@ -210,11 +213,16 @@ height:350px;
 }
 
 .topblack {
-	border-top: 12px solid #111;
+	border-top: 12px solid #333;
 	}
+
+.topwhite {
+	border-top: 12px solid #FFF;
+	}
+	
 .sidesblack {
-	border-left: 12px solid #111;
-	border-right: 12px solid #111;
+	border-left: 12px solid #333;
+	border-right: 12px solid #333;
 	}
 	
 /********* language select **************/
@@ -554,7 +562,7 @@ margin-bottom:9px;
 }
 
 h1.white:hover, h2.white:hover, h3.white:hover, h4.white:hover, h5.white:hover, h6.white:hover, h1.black:hover, h2.black:hover, h3.black:hover, h4.black:hover, h5.black:hover, h6.black:hover{
-background:#43EDAB !important;
+background:#eeeeee !important;
 -webkit-transition-duration:0.4s;
 -moz-transition-duration:0.4s;
 -ms-transition-duration:0.4s;
@@ -568,6 +576,9 @@ margin-bottom:15px;
 padding-bottom:15px;
 }
 
+.whiteborder{
+	border:1px solid #fff;
+	}
 /*
 ' PAGE STYLES
 */
@@ -577,10 +588,11 @@ overflow:hidden;
 }
 
 .black{
-background:#111;
+background:#333;
 }
 
 .white{
+/*background:#fffbf5;*/
 background:#fff;
 box-sizing:border-box;
 -moz-box-sizing:border-box;
@@ -588,7 +600,7 @@ box-sizing:border-box;
 }
 
 .grey{
-background:#e6e6e6;
+background:#f7efe1;
 }
 
 .drag{
@@ -744,7 +756,7 @@ color:#777 !important;
 }
 
 .greentext{
-color:#43EDAB !important;
+color:#eeeeee !important;
 -webkit-transition-duration:0.3s;
 -moz-transition-duration:0.3s;
 -ms-transition-duration:0.3s;
@@ -804,7 +816,7 @@ font-size:12px !important;
 font-size:1.2rem !important;
 }
 
-.smallfont{
+.smallfont, .smallfont p{
 font-size:10px !important;
 font-size:1.0rem !important;
 }
@@ -1263,7 +1275,7 @@ color:#ddd;
 -moz-transition-duration: .4s;
 -o-transition-duration: .4s;
 -ms-transition-duration: .4s;
-color:#43EDAB !important;
+color:#eeeeee !important;
 }
 
 .blogpost{
@@ -1331,7 +1343,7 @@ margin-bottom:25px;
 
 
 .item:hover .whitetext{
-color:#43EDAB !important;
+color:#eeeeee !important;
 -webkit-transition-duration: .6s;
 -moz-transition-duration: .6s;
 -o-transition-duration: .6s;
@@ -1440,7 +1452,7 @@ color: #fff !important;
 }
 
 .itemstripe:hover .infowhite a.blacktext{
-color: #43EDAB !important;
+color: #eeeeee !important;
 -webkit-transition-duration: .4s;
 -moz-transition-duration: .4s;
 -o-transition-duration: .4s;
@@ -1448,7 +1460,7 @@ color: #43EDAB !important;
 }
 
 .itemstripe:hover .infowhite span.blacktext{
-color: #43EDAB !important;
+color: #eeeeee !important;
 -webkit-transition-duration: .4s;
 -moz-transition-duration: .4s;
 -o-transition-duration: .4s;
@@ -1507,7 +1519,7 @@ height: 100%;
 left: 0;
 top:0;
 cursor: pointer;
-background:#43EDAB;
+background:#eeeeee;
 -webkit-transition-duration: .6s;
 -moz-transition-duration: .6s;
 -o-transition-duration: .6s;
@@ -1592,12 +1604,35 @@ overflow: hidden;
 cursor: pointer;
 }
 
+.newsgridblock{
+position: relative;
+float: left;
+width: 313px;
+}
+
+.newsgridblock .noticiatitle a {
+color: #111;
+text-transform: none;
+}
+
+.newsteaserbody{
+	padding:0 20px;
+	}
+.newsgridblock img{
+display:block;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+border:1px solid #fff;
+}
+
 .gridblock img{
 display:block;
 box-sizing:border-box;
 -moz-box-sizing:border-box;
 -webkit-box-sizing:border-box;
-border:1px solid #111;
+/*border:3px solid #333;*/
+margin: 0 3px;
 }
 
 
@@ -1628,7 +1663,7 @@ display:block;
 box-sizing:border-box;
 -moz-box-sizing:border-box;
 -webkit-box-sizing:border-box;
-border:1px solid #111;
+border:1px solid #333;
 }
 /*.gridinfo {
 position: absolute !important;
@@ -1736,7 +1771,7 @@ background: #111;
 
 .white .submit:hover{
 color: #fff;
-background: #43EDAB;
+background: #eeeeee;
 -webkit-transition-duration: 0.4s;
 -moz-transition-duration: 0.4s;
 -o-transition-duration: 0.4s;
@@ -1781,7 +1816,7 @@ background: #fff;
 
 .black .submit:hover{
 color: #111;
-background: #43EDAB;
+background: #eeeeee;
 -webkit-transition-duration: 0.4s;
 -moz-transition-duration: 0.4s;
 -o-transition-duration: 0.4s;
@@ -1819,7 +1854,7 @@ box-sizing:border-box;
 letter-spacing: 1px;
 color: #fff;
 text-shadow: 0px 1px 0px rgba(0,0,0,0.15);
-background: #43EDAB;
+background: #eeeeee;
 box-shadow:0px 0px #111;
 -webkit-box-shadow: 0px 0px #111;
 -moz-box-shadow: 0px 0px #111;
@@ -1858,7 +1893,7 @@ box-sizing:border-box;
 letter-spacing: 1px;
 color: #fff;
 text-shadow: 0px 1px 0px rgba(0,0,0,0.15);
-background: #43EDAB;
+background: #eeeeee;
 box-shadow:0px 0px #111;
 -webkit-box-shadow: 0px 0px #111;
 -moz-box-shadow: 0px 0px #111;
@@ -1912,7 +1947,7 @@ letter-spacing: 1px;
 color: #fff;
 text-shadow: 0px 1px 0px rgba(0,0,0,0.15);
 border:1px solid #00bd78;
-background: #43EDAB;
+background: #eeeeee;
 box-shadow:0px 0px #111;
 -webkit-box-shadow: 0px 0px #111;
 -moz-box-shadow: 0px 0px #111;
@@ -1985,7 +2020,7 @@ letter-spacing: 1px;
 color: #fff;
 text-shadow: 0px 1px 0px rgba(0,0,0,0.15);
 border:1px solid #00bd78;
-background: #43EDAB;
+background: #eeeeee;
 box-shadow:0px 0px #111;
 -webkit-box-shadow: 0px 0px #111;
 -moz-box-shadow: 0px 0px #111;
@@ -2057,7 +2092,7 @@ letter-spacing: 1px;
 color: #fff;
 text-shadow: 0px 1px 0px rgba(0,0,0,0.15);
 border:1px solid #00bd78;
-background: #43EDAB;
+background: #eeeeee;
 box-shadow:0px 0px #111;
 -webkit-box-shadow: 0px 0px #111;
 -moz-box-shadow: 0px 0px #111;
@@ -2537,7 +2572,7 @@ color: #111;
 }
 
 .white .tweet_list a, .grey .tweet_list a, .greybox .tweet_list a{
-color:#43EDAB;
+color:#eeeeee;
 }
 
 
@@ -3937,7 +3972,7 @@ background: #111;
 
 input:hover[type="submit"] {
 color: #fff;
-background: #43EDAB;
+background: #eeeeee;
 cursor: pointer;
 -webkit-transition-duration: 0.4s;
 -moz-transition-duration: 0.4s;

@@ -12,7 +12,9 @@ PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 <div class="container slideshow" >
 	<section class="row largepadding">
 	<div class="six columns bigpadding"  data-0="opacity: 1" data-150="opacity:0" >
-    <h1 class="whitetext shadow"><?php echo $title; ?></h1>
+    <!-- <h1 class="whitetext shadow"><?php echo $title; ?></h1> -->
+    
+    <div><img src='<?php echo $root."/img/logoHome.png";?>'  /></div>
 		<!-- SLIDESHOW CAPTION -->
 		<?php 
 		echo render($node_content['body']);
@@ -35,7 +37,7 @@ print ($edit_tabs);
 <?php //krumo ($page); ?>
 <!-- THICK STRIPE BORDER -->
 <!-- THICK STRIPE BORDER -->
-<div class="smallpadding" style="background: url('<?php echo $root; ?>/img/Carta_de_ajuste.jpg');" >
+<div class="smallpadding white"  >
 </div>
 
 <div class="container black bigpadding">
