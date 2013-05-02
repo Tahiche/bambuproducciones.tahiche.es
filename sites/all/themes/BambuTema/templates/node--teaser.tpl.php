@@ -26,7 +26,7 @@
   ?>
   <a href="<?php print $node_url;?>">
   <div class="gridinfo">
-		<h3 class="whitetext extrabold smalltoppadding center"><?php print $title; ?></h3>
+		<h3 class="whitetext smalltoppadding center"><?php print $title; ?></h3>
 		<h5 class="whitetext center"><?php echo $tags; // echo render($content['body']); ?></h5>
 		<span class="smallfont space"><?php echo t('VER PROYECTO');?></span>
 	</div>

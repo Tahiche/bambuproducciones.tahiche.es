@@ -66,7 +66,7 @@ settings['font_family'] = '"Oswald", sans-serif'
 
 settings[h1] = '36px'
 settings[h2] = '30px'
-settings[h3] = '24px'
+settings[h3] = '25px'
 settings[h4] = '18px'
 settings[h5] = '14px'
 settings[h6] = '12px'

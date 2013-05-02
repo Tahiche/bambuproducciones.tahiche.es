@@ -11,9 +11,9 @@ print ($edit_tabs);
 <!-- SLIDESHOW CONTAINER WITH STRIPES BACKGROUND. CHANGE THE BELOE BG URL TO USE YOUR OWN BACKGROUND
 PLEASE REMEMBER: THE BACKGROUND HAS LOW OPACITY TO MAKE SLIDESHOW VISIBLE.-->
 
-<div class="container slideshow"  >
-	<section class="row largepadding">
-	<div id="ficha_header_data" class="six columns bigpadding" data-0="opacity: 1" data-150="opacity:0" >
+<div class="container slideshow largepadding"  >
+	<section class="row midpadding"> 
+	<div id="ficha_header_data" class="six columns" data-0="opacity: 1" data-150="opacity:0" >
     
     <?php 
 	// 

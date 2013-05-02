@@ -264,7 +264,7 @@ function edit_block_view($delta = '') {
 function edit_trigger_link() {
   return array(
     '#type' => 'link',
-    '#title' => t('Quick edit'),
+    '#title' => t('Ed.Rápida'),
     '#href' => current_path(),
     '#options' => array('attributes' => array('id' => 'toolbar-tab-edit', 'class' => array('edit_view-edit-toggle', 'edit-edit'))),
     '#ajax' => array(

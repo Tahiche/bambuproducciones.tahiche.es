@@ -1,6 +1,7 @@
 <?php 
   function BambuTema_header($page){
-  global $root; 
+  global $root;   
+  
 ?>
 
   <header data-0="top:40px;" data-top-top="top:0px;" class="boxshadow white">
@@ -40,10 +41,17 @@
 				</div> 
                 
       <div class="five columns branding" >
-          
+      
+      <?php
+	  // if its home we hide logo on scroll
+	  $logoHide="";
+	  if($page['front_blog']['views_noticias_home-block']){
+		   $logoHide='data-0="height:0px" data-top-top="height:40px"';
+		  };
+	  ?>    
 		 	
 		 
-            <a id="logoheader" href="<?php print base_path();?>"><img id="logo_b" src="/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/img/logobambu.gif" />
+            <a id="logoheader" href="<?php print base_path();?>"><img id="logo_b" src="/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/img/logobambu.gif" <?php echo  $logoHide; ?> />
            <!--  <img id="osoimg" data-0="height:82px" data-top-top="height:0px" src="/<?php echo drupal_get_path('theme',$GLOBALS['theme']); ?>/img/oso.png" /> -->
             </a>
             

@@ -23,13 +23,16 @@
 <file name="page--contact.tpl.php" server="D:/Proyectos/drupal7_test/spark-7.x-1.0-alpha7/" local="130071603192946297" remote="130071603190000000" />
 <file name="page--contact.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130105135223951429" remote="130105135200000000" />
 <file name="page--node--nosotros.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130105247869414381" remote="130105247400000000" />
-<file name="page--front.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130096530183868325" remote="130096530000000000" />
-<file name="node--teaser.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130096467039996702" remote="130096467000000000" />
+<file name="page--front.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130106896399560172" remote="130106896200000000" />
+<file name="node--teaser.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130106003415455550" remote="130106003400000000" />
 <file name="node--article-teaser.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130096500225254790" remote="130096500000000000" />
 <file name="page--node--article.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130096533348759346" remote="130096533000000000" />
-<file name="page--taxonomy--term.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130096539925485514" remote="130096539600000000" />
-<file name="node--trabajo-ficha.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130096577437871099" remote="130096577400000000" />
+<file name="page--taxonomy--term.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130106970691369420" remote="130106970600000000" />
+<file name="node--trabajo-ficha.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130106036181449658" remote="130106035800000000" />
 <file name="__original__page--front.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130105128769432252" remote="130105128600000000" />
 <file name="field-collection-item--field-colaboradores.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130105132799972786" remote="130105132800000000" />
 <file name="field-collection-item--field-equipo.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130105238788604989" remote="130105238400000000" />
+<file name="html.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130105989504019861" remote="130105989000000000" />
+<file name="node--view--recent-projects--block.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130106001121584348" remote="130106001000000000" />
+<file name="page--node--trabajo-ficha.tpl.php" server="ftp.tahiche.es/public/bambuproducciones/" local="130106059892735866" remote="130106059800000000" />
 </dwsync>

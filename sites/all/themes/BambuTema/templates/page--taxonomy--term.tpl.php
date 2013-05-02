@@ -8,11 +8,11 @@ print ($edit_tabs);
   
 <div class="container bigtoppadding bigbottompadding white" >
 <?php //krumo($page['content']['system_main']['term_heading']); ?>
-	<section class="row  bigpadding smallbottommargin"   data-0="opacity: 1;height:20% " data-150="opacity:0; height:0%">
+	<section class="row  bigpadding"   data-0="opacity: 1;height:20% " data-150="opacity:0; height:0%">
     <div class="six columns"  style="height:100%;" >
-  	<h1 class="italic blacktext "><?php print $title; ?></h1>
+  	<h1 class="blacktext "><?php print $title; ?></h1>
     
-    <div id="tax_description"  class="white blacktext smallsidepadding meta"><?php 
+    <div id="tax_description"  class="white blacktext  meta"><?php 
 	$page['content']['system_main']['term_heading']['term']['format']='very_simple_html';
 	
 	$display = array('type' => 'very_simple_html');

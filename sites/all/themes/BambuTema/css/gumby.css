@@ -109,7 +109,7 @@
   
   	h1, h2, h3, h4, h5, h6 {
   		color: #1b1b1b;
-  		font-weight: bold;
+  		font-weight: normal !important;
   		line-height: 1.6;
   	}
   	
@@ -130,9 +130,10 @@
   	}
   	
   	h3 {
-  	  font-size: 29px;
-  		font-size: 2.9rem;
+  	  font-size: 25px;
+  		font-size: 2.5rem;
   		margin-bottom: 9px;
+		text-transform:uppercase;
   	}
   	
   	h4 {
@@ -183,8 +184,8 @@
   		font-size: 1.8rem;
   	}
   
- 	a { color: #d04526; text-decoration: none; outline: 0; line-height: inherit; }
- 	a:hover { color: #c03d20; }
+ 	a { color: #8D8D8D; text-decoration: none; outline: 0; line-height: inherit; }
+ 	a:hover {  color: #B3B3B3;}
  	p a, p a:visited { line-height: inherit; }
   
   

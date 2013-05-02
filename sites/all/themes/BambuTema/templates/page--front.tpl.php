@@ -42,8 +42,8 @@ print ($edit_tabs);
 
 <div class="container black bigpadding">
 <section class="row smallbottompadding">
-<h3 class="whitetext bold midbottommargin center"><?php echo t('Proyectos Destacados');?></h3>
-<?php 
+<h3 class="whitetext  midbottommargin center"><?php echo t('Proyectos Destacados');?></h3>
+<?php  
 echo render($node_content['field_destacados']);
 //print  render($page['content']);  ?>   
 </section>
@@ -55,7 +55,7 @@ echo render($node_content['field_destacados']);
 <!-- PORTFOLIO CONTAINER -->
 <div class="container white bigpadding topblack">
 	<section class="row smallbottompadding">
-	<h3 class="blacktext bold midbottommargin center"><?php echo t("Noticias");?></h3>
+	<h3 class="blacktext  midbottommargin center"><?php echo t("Noticias");?></h3>
 	<!-- BLACKHORIZONTAL -->
 	<div class="three columns alpha centered blackhorizontal">
 	</div>

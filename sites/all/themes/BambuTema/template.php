@@ -35,7 +35,8 @@ function BambuTema_preprocess_page(&$vars, $hook) {
   // añadir inline edit
   $inlineedit=edit_trigger_link();
   $vars['edit_tabs']="";
-  if($vars['is_admin']) {
+  //if($vars['is_admin']) {
+	if(  $vars['tabs']['#primary']) {
   array_unshift($vars['tabs']['#primary'], $inlineedit );
   $vars['edit_tabs']='<div id="edit_tabs">';
   $vars['edit_tabs'].=theme(
@@ -46,7 +47,7 @@ function BambuTema_preprocess_page(&$vars, $hook) {
 		'collapsed' => TRUE
 	  )
 	);
- $vars['edit_tabs'].="</div>";
+ $vars['edit_tabs'].="</div>"; 
   }
 
   
@@ -136,9 +137,9 @@ function BambuTema_links($variables) {
 // THEME_links__locale_block
 
 function BambuTema_links__locale_block(&$vars) {
-	//krumo($vars);
+	// krumo($vars);
   foreach($vars['links'] as $language => $langInfo) {
-    /*$abbr = $langInfo['language']->language;
+	/*$abbr = $langInfo['language']->language;
     $name = $langInfo['title'];
     //$vars['links'][$language]['title'] = '<abbr title="' . $name . '">' . $abbr . '</abbr>';
 	$vars['links'][$language]['title'] =  $abbr;
@@ -146,7 +147,8 @@ function BambuTema_links__locale_block(&$vars) {
 	 $vars['links'][$language]['attributes']['alt']=$name;
 	 $vars['links'][$language]['attributes']['title']=$name;
     $vars['links'][$language]['html'] = TRUE;*/
-	$vars['links'][$language]['title']=$language;
+	if($language=="gl" || $language=="GL" ) $vars['links'][$language]['title']="GAL";
+	else $vars['links'][$language]['title']=$language;
   }
   $content = theme_links($vars);
   return $content; 
